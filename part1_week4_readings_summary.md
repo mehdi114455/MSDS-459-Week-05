@@ -15,7 +15,6 @@ The chapter highlights the Automatic Content Extraction (ACE) ontology as a foun
 
 Without a clear ontology, extracted relations are inconsistent and difficult to integrate. Ontology alignment is therefore a prerequisite for scalable KG construction.
 
---
 
 ## 2: Multiple learning paradigms exist for relation extraction
 The chapter surveys a wide range of techniques for RE:
@@ -28,7 +27,6 @@ Historically, kernel based methods outperformed feature based approaches, but th
 
 Different RE paradigms trade off accuracy, scalability, and annotation cost. Practical KG systems often combine these methods rather than relying on a single approach.
 
---
 
 ## 3: Deep learning and joint extraction improve KG quality
 Recent advances in deep learning have significantly influenced relation extraction. The chapter discusses convolutional neural networks (CNNs), positional embeddings, and multi instance learning as key innovations that improved RE performance, particularly under distant supervision. Models such as piecewise CNNs (PCNNs) address noise by aggregating evidence across multiple sentences mentioning the same entity pair.
@@ -37,12 +35,10 @@ In addtion to isolated RE, the chapter talks about joint information extraction,
 
 Joint extraction enables richer, more coherent KGs by modeling dependencies between entities, relations, and events rather than treating them independently.
 
---
 
 ## Reflection: Relevance to knowledge base design
 Chapter 6 makes it clear that relation extraction is not merely an NLP task but a knowledge engineering problem. The quality of a knowledge graph depends heavily on how relations are defined, extracted, and validated against an ontology. For a course term project, this chapter suggests that choosing a database or storage system is only part of the solution; equal attention must be paid to extraction methodology, ontology design, and error handling.
 
---
 
 ## References
 Kejriwal, Mayank, Craig A. Knoblock, and Pedro Szekely. 2021. *Knowledge Graphs: Fundamentals, Techniques, and Applications*. Cambridge, MA: MIT Press. Chapter 6.
