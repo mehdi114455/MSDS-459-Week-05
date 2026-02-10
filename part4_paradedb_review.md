@@ -1,4 +1,4 @@
-# Part 4 — ParadeDB Review (Project Context)
+# Part 4 - ParadeDB Review (Project Context)
 
 
 ParadeDB is a PostgreSQL extension that provides full text and relevance ranked search capabilities using BM25 style scoring. It is designed to bring search engine like behavior directly into Postgres without requiring an external system.

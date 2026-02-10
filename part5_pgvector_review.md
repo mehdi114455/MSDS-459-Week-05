@@ -1,4 +1,4 @@
-# Part 5 — pgvector Review (Project Context)
+# Part 5 - pgvector Review (Project Context)
 
 pgvector is a PostgreSQL extension that enables storage and similarity search over vector embeddings. It supports exact and approximate nearest neighbor search and integrates with standard PostgreSQL clients.
 
@@ -8,7 +8,7 @@ Because my project involves semantic analysis of news and regulatory text, pgvec
 ## Key Features
 
 ### 1. Vector similarity search inside PostgreSQL
-pgvector introduces a native `vector` type and similarity operators.
+pgvector introduces a native vector type and similarity operators.
 
 News articles and regulatory documents can be embedded and searched semantically, enabling retrieval beyond keyword matching.
 

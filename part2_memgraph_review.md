@@ -1,4 +1,4 @@
-# Part 2 — Graph Database Review: Memgraph
+# Part 2 - Graph Database Review: Memgraph
 
 
 Memgraph is an open source graph database built around the property graph model and queried using Cypher. It is commonly positioned for real-time / streaming graph analytics, where fast updates and fast traversals matter. Memgraph highlights integration with streaming systems and running algorithms (via its ecosystem) over graph data. (Memgraph 2026a; Memgraph 2026b; memgraph/memgraph 2026)

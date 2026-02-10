@@ -1,4 +1,4 @@
-# Part 1 — Week 4 Readings Summary  
+# Part 1 - Week 4 Readings Summary  
 **Chapter 6: Relation Extraction**
 
 ## Overview of the Reading

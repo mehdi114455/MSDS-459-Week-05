@@ -1,4 +1,4 @@
-# Part 3 — TimescaleDB Review (Project Context)
+# Part 3 - TimescaleDB Review (Project Context)
 
 
 TimescaleDB is a PostgreSQL extension designed for managing and querying timeseries data at scale. It introduces abstractions such as hypertables, continuous aggregates, and automated data lifecycle policies while preserving full SQL compatibility. Because my term project models time as a first class concept, TimescaleDB is a natural candidate for storing financial time series and temporally indexed events.
