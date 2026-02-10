@@ -20,11 +20,11 @@ Without a clear ontology, extracted relations are inconsistent and difficult to 
 ## 2: Multiple learning paradigms exist for relation extraction
 The chapter surveys a wide range of techniques for RE:
 
-- **Supervised RE:** including feature based and kernel based methods, treat RE as a multiclass classification problem over entity pairs.
-- **Semisupervised approaches:** such as bootstrapping and distant supervision, reduce annotation costs by leveraging seed examples or existing knowledge bases.
-- **Unsupervised RE:** attempts to discover unknown relation types through clustering and pattern induction.
+- **Supervised RE** including feature based and kernel based methods, treat RE as a multiclass classification problem over entity pairs.
+- **Semisupervised approaches** such as bootstrapping and distant supervision, reduce annotation costs by leveraging seed examples or existing knowledge bases.
+- **Unsupervised RE** attempts to discover unknown relation types through clustering and pattern induction.
 
-Historically, kernel based methods outperformed feature based approaches, but they required careful representation design. More recently, distant supervision has become influential because it exploits large existing KGs to generate noisy but scalable training data. However, this introduces challenges related to label noise and false assumptions. :contentReference[oaicite:2]{index=2}
+Historically, kernel based methods outperformed feature based approaches, but they required careful representation design. More recently, distant supervision has become influential because it exploits large existing KGs to generate noisy but scalable training data. However, this introduces challenges related to label noise and false assumptions.
 
 Different RE paradigms trade off accuracy, scalability, and annotation cost. Practical KG systems often combine these methods rather than relying on a single approach.
 
@@ -33,7 +33,7 @@ Different RE paradigms trade off accuracy, scalability, and annotation cost. Pra
 ## 3: Deep learning and joint extraction improve KG quality
 Recent advances in deep learning have significantly influenced relation extraction. The chapter discusses convolutional neural networks (CNNs), positional embeddings, and multi instance learning as key innovations that improved RE performance, particularly under distant supervision. Models such as piecewise CNNs (PCNNs) address noise by aggregating evidence across multiple sentences mentioning the same entity pair.
 
-In addtion to isolated RE, the chapter talks about joint information extraction, where entities, relations, and events are extracted simultaneously. Joint models reduce error propagation inherent in pipeline approaches and better capture document level context. Although computationally complex, joint extraction has been shown to improve overall KG quality. :contentReference[oaicite:3]{index=3}
+In addtion to isolated RE, the chapter talks about joint information extraction, where entities, relations, and events are extracted simultaneously. Joint models reduce error propagation inherent in pipeline approaches and better capture document level context. Although computationally complex, joint extraction has been shown to improve overall KG quality.
 
 Joint extraction enables richer, more coherent KGs by modeling dependencies between entities, relations, and events rather than treating them independently.
 
@@ -45,4 +45,4 @@ Chapter 6 makes it clear that relation extraction is not merely an NLP task but 
 ---
 
 ## References (Chicago Author/Date)
-Kejriwal, Mayank, Craig A. Knoblock, and Pedro Szekely. 2021. *Knowledge Graphs: Fundamentals, Techniques, and Applications*. Cambridge, MA: MIT Press. Chapter 6. :contentReference[oaicite:4]{index=4}
+Kejriwal, Mayank, Craig A. Knoblock, and Pedro Szekely. 2021. *Knowledge Graphs: Fundamentals, Techniques, and Applications*. Cambridge, MA: MIT Press. Chapter 6.
