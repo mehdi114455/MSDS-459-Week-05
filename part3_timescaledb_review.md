@@ -1,7 +1,7 @@
 # Part 3 — TimescaleDB Review (Project Context)
 
 
-TimescaleDB is a PostgreSQL extension designed for managing and querying time-series data at scale. It introduces abstractions such as hypertables, continuous aggregates, and automated data lifecycle policies while preserving full SQL compatibility. Because my term project models time as a first class concept, TimescaleDB is a natural candidate for storing financial time series and temporally indexed events.
+TimescaleDB is a PostgreSQL extension designed for managing and querying timeseries data at scale. It introduces abstractions such as hypertables, continuous aggregates, and automated data lifecycle policies while preserving full SQL compatibility. Because my term project models time as a first class concept, TimescaleDB is a natural candidate for storing financial time series and temporally indexed events.
 
 
 ## Key Features
@@ -15,7 +15,7 @@ Stock prices, trading volume, and derived financial indicators for healthcare fi
 ### 2. Continuous aggregates for incremental analytics
 Continuous aggregates maintain materialized rollups that are refreshed automatically as new data arrives. Unlike traditional materialized views, they update incrementally rather than recomputing from scratch.
 
-This is well suited for computing rolling returns, volatility measures, or event-aligned market responses (e.g., average price movement after FDA announcements).
+This is well suited for computing rolling returns, volatility measures, or event-aligned market responses like average price movement after FDA announcements.
 
 
 ### 3. Automated retention and compression policies
@@ -26,19 +26,15 @@ This allows the project to retain high-resolution recent data while compressing 
 
 ## Advantages for my Project
 
-- **Excellent fit for financial time-series data**, which is a core component of the project.
-- **SQL-based access**, making integration with Python analytics and feature extraction pipelines straightforward.
-- **Operational simplicity**, since TimescaleDB remains fully compatible with PostgreSQL tooling.
-
+- A good fit for financial timeseries data, which is a core component of the project.
+- SQL-based access making integration with Python analytics and feature extraction pipelines straightforward.
+- Operational simplicity, since TimescaleDB remains fully compatible with PostgreSQL tooling.
 
 ## Disadvantages and Limitations for my project
 
-- **Not graph-native**: TimescaleDB does not support multi-hop relationship traversal, which limits its usefulness for entity-centric reasoning.
-- **Schema rigidity**: Frequent evolution of entity and relationship types can be cumbersome compared to graph databases.
-- **No native semantic reasoning**: Ontology-level inference must be handled externally.
+- Not graph-native: TimescaleDB does not support multi-hop relationship traversal, which limits its usefulness for entity centric reasoning.
+- Schema rigidity: Frequent evolution of entity and relationship types can be cumbersome compared to graph databases.
+- No native semantic reasoning: Ontology-level inference must be handled externally.
 
-
---
-
-## References (Chicago Author/Date)
+## References
 Timescale. 2026. “Timescale Documentation.” https://www.timescale.com  
